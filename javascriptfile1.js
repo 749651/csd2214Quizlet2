@@ -1,3 +1,12 @@
-waitingFn(3000);
+function waitingFn(timeInMs) {
+    const futureTime = Date.now() +timeInMs;
 
-console.log("Function call has ust ended");
+    while(futureTime > Date.now()){
+        //waiting
+    }
+
+}
+
+waitingFn(3000);
+debugger;
+console.log("Function call has just ended");
